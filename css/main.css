@@ -1,0 +1,55 @@
+*,
+*:before,
+*:after {
+	margin:0;
+	padding:0;
+}
+
+body{
+  background-image: url(../birds.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: center center;
+  background-attachment: fixed;
+}
+/*flex*/
+
+.flex-container {
+	width:90%;
+	padding:10px;
+	border:solid 1px;
+	-webkit-display:flex;
+	-ms-display:flexbox;
+	display:flex;
+	background-color: rgba(255,255,255,0.3);
+	text-align: center;
+	margin-top: 30px;
+	margin-left: auto;
+	margin-right: auto;
+}
+.flex-container section {
+  border: solid 1px;
+  padding: 10px;
+  margin: 1%;
+  flex:2;
+}
+
+/*text*/
+h1 {
+	color:white;
+	text-align: center;
+	font-family: 'Lora', serif;
+}
+
+p{
+	font-size: 19px;
+	font-family: 'Nunito', sans-serif;
+}
+
+@media only screen and (max-width: 780px) {
+  .flex-container {
+/*    -webkit-flex-flow: column;
+    -ms-flex-flow: column;
+    flex-flow: column;*/
+    flex: 0 0 50%;
+  }
